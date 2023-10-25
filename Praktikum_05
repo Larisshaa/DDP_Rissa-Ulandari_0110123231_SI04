@@ -1,0 +1,28 @@
+#Tugas01
+k = ["ngeng ngeng","motor",160,"pink",2]
+print(k)
+k.append("37 jt")
+k.append("2")
+print(k)
+k.insert( 2,"honda")
+print(k)
+print()
+
+#Tugas02
+pilih = input("menghitung luas bangun datar:")
+match pilih:
+    case"persegi" |"Persegi" |"PERSEGI":
+        sisi =int(input("masukan sisi:"))
+        hasilP  = sisi * sisi
+        print(hasilP)
+    case"lingkaran" |"Lingkaaran"|"LINGKARAN":
+        jari =int(input("masukan jari jari:"))
+        hasilL  = 1/4 * 22/7 * jari
+        print(hasilL)
+    case"segitiga" |"Segitiga" |"SEGITIGA":
+        alas =int(input("masukan alas:"))
+        tinggi = int(input("masukan tinggi:"))
+        hasilS  =alas * tinggi /2
+        print(hasilS)
+    case _:
+        print("salah memasukan pilihan")
